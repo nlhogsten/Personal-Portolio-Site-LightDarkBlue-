@@ -3,4 +3,4 @@
 <br/>
 This site was made to present physical art pieces that I have created - some of which have been displayed in art exhibits and stay in public spaces.
 
-!*[IMG_3564](https://github.com/user-attachments/assets/d81e5951-d149-44ee-b974-a1de40b9ac37)
+*![IMG_3564](https://github.com/user-attachments/assets/d81e5951-d149-44ee-b974-a1de40b9ac37)
