@@ -1,0 +1,550 @@
+/* ------------------------- CSS for phone screens --------------------------------*/  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overscroll-behavior: none;
+    overflow-x: none;
+}
+
+#nhogsten-pic {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* #nate-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+} */
+
+/* ------------------------- CSS for phone screens --------------------------------*/  
+
+.homepage-footer {
+    bottom: 0;
+    padding: 5px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    color: rgba(204, 204, 204, 0.7);
+    font-weight: bold;
+    font-size: 0.7em;
+}
+/*------------------slider------------------------*/
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.slider img {
+    width: 100%;
+    display: none;
+}
+img.display-slide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: hsl(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 35px;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1;}
+}
+/*---------------main page grid---------------------*/
+.site-body {
+    display: grid;
+    grid-template-columns: 375px;
+    grid-row: 2;
+    justify-content: center;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nate {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #144866;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 250px;
+}
+
+.container {
+    grid-row: 2/3;
+    padding-top: 35px;
+}
+
+.text-div {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(9, 40px);
+    padding-left: 35px;
+    padding-top: 20px;
+    background: rgba(204, 204, 204, 0.5);
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 16px;
+    row-gap: 10px;
+}
+
+.education {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: baseline;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.school {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.school-year {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.businesses {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    justify-self: baseline;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kcc {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.compost-year {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.pie {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.pie-year {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.exhibitions {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    justify-self: baseline;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fantasy {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.fantasy-year {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.work {
+    grid-column: 1/3;
+    grid-row: 8/9;
+    justify-self: baseline;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aecom {
+    grid-column: 2/3;
+    grid-row: 9/10;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.aecom-year {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.bio {
+    background: rgba(204, 204, 204, 0.5);
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 17px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bio-p {
+    padding: 20px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+/* -------------------------Contact Button------------------------------- */
+.open-contact {
+    background: none; 
+    border: none;
+    color: white;
+    font-family: "Proza Libre", sans-serif;
+    font-size: 1em;
+}
+#contact-video {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    width: 240px;
+    height: 1px; 
+    height: 130px;
+    z-index: -10;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contact-popup {
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0);
+    transition: 200ms ease-in-out;
+    border: none;
+    border-radius: 10px;
+    z-index: 10;
+    width: 230px;
+    height: 130px;
+}
+.popup-active {
+    transform: translate(-50%, -50%) scale(1.0);
+}
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-items: end;
+}
+.close-contact {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+.contact-overlay {
+    position: fixed;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+.contact-active {
+    opacity: 1;
+    pointer-events: all;
+}
+.email {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: black;
+    display: inline;
+    justify-content: center;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact-body {
+    margin-top: 20px;
+}
+/*------------------Hamburger menu------------------*/
+.open-contact {
+    background: none; 
+    border: none;
+    color: white;
+    font-family: "Proza Libre", sans-serif;
+    font-size: 1em;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.7s ease;
+    font-size: 1em;
+}
+.navbar {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #144866;
+    width: 100%;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 3;
+}
+.nav-menu.active {
+    left: 0;
+    opacity: 1;
+}
+.nav-item {
+    list-style: none;
+    margin: 16px auto;
+    font-family: "Proza Libre", sans-serif;
+    text-align: center;
+}
+.nav-link:hover {
+    color: dodgerblue;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    justify-items: center;
+    align-items: center;
+}
+.burger-box {
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    background-color: #144866;
+    padding: 4px;
+    border-radius: 5px;
+    width: 34px;
+    height: 34px;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+/* -------------------------Contact Button------------------------------- */
+#contact-video {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    width: 240px;
+    height: 1px; 
+    height: 130px;
+    z-index: -10;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contact-popup {
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0);
+    transition: 200ms ease-in-out;
+    border: none;
+    border-radius: 10px;
+    z-index: 10;
+    width: 230px;
+    height: 130px;
+}
+.popup-active {
+    transform: translate(-50%, -50%) scale(1.0);
+}
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-items: end;
+}
+.close-contact {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+.contact-overlay {
+    position: fixed;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+.contact-active {
+    opacity: 1;
+    pointer-events: all;
+}
+.email {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: black;
+    display: inline;
+    justify-content: center;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact-body {
+    margin-top: 20px;
+}
+/*----------------computer css-------------------*/
+@media only screen and (min-width: 768px) {
+    .text-div {
+        padding-left: 75px;
+        grid-template-columns: 100px 425px;
+    }
+    .name {
+        margin-top: 0;
+    }
+    .contact-popup {
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 280px;
+        max-width: 80%;
+    }
+
+    .contact-body {
+        text-align: center;
+        padding-top: 85px;
+        padding-left: 20px;
+    }
+
+    .close-contact {
+        padding: 10px 15px;
+    }
+
+    .email {
+        font-size: 22px;
+    }
+
+    .contact-body {
+        margin-top: 0;
+    }
+    #contact-video {
+        right: 0; 
+        bottom: 0;
+        width: 500px;
+        height: 280px; 
+    }
+}

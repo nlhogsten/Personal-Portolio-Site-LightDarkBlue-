@@ -1,0 +1,39 @@
+
+
+.artists-div {
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 50px;
+    background-color: white;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+/*-------------------------------------Nate Hogsten Desktop Profile-------------------------------------*/
+.nhogsten-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 35px 300px;
+    align-items: center;
+    justify-items: center;
+    background-color: blue;
+}
+
+
+.nhogsten-h2 {
+    grid-row: 1/2;
+}
+
+.nhogsten {
+    grid-row: 2/3;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+}
+

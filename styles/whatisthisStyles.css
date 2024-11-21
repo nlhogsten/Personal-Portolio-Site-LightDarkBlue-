@@ -1,0 +1,153 @@
+/* ------------------------- CSS for phone screens --------------------------------*/  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#artworks-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* ------------------------- CSS for phone screens --------------------------------*/  
+
+.homepage-footer {
+    bottom: 0;
+    padding: 5px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    color: rgba(204, 204, 204, 0.7);
+    font-weight: bold;
+    font-size: 0.7em;
+    padding: 15px;
+}
+
+.header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+.homepage-h1 {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+    
+.light-header {
+    background-color: #144866;
+    color: #7AAECC;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+    
+.dark-header {
+    background-color: #7AAECC;
+    color: #144866;
+    padding: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+    
+.blue-header {
+    background-color: #3D7799;
+    color: #D9EAF5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.grid4 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: baseline;
+}
+
+.homepage-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 15px;
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
+}
+
+#chillin-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.body-div {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background: rgba(204, 204, 204, 0.5);
+    line-height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .light-header {
+        background-color: #144866;
+        color: #7AAECC;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; 
+        font-size: 34px !important; 
+    }
+
+    .dark-header {
+        background-color: #7AAECC;
+        color: #144866;
+        padding: 10px;
+        font-size: 34px !important;
+    }
+
+    .blue-header {
+        background-color: #3D7799;
+        color: #D9EAF5;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 34px !important;
+    }
+
+    .body-div {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#homepage-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+body {
+    overscroll-behavior: none;
+    overflow-x: none;
+}
+/* ------------------------- CSS for phone screens --------------------------------*/  
+.header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}   
+.homepage-h1 {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}  
+.light-header {
+    background-color: #144866;
+    color: #7AAECC;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}   
+.dark-header {
+    background-color: #7AAECC;
+    color: #144866;
+    padding: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}   
+.blue-header {
+    background-color: #3D7799;
+    color: #D9EAF5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+/* -------------------------Contact Button------------------------------- */
+#contact-video {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    width: 240px;
+    height: 1px; 
+    height: 130px;
+    z-index: -10;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contact-popup {
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0);
+    transition: 200ms ease-in-out;
+    border: none;
+    border-radius: 10px;
+    z-index: 10;
+    width: 230px;
+    height: 130px;
+}
+.popup-active {
+    transform: translate(-50%, -50%) scale(1.0);
+}
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-items: end;
+}
+.close-contact {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+.contact-overlay {
+    position: fixed;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.email {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: black;
+    display: inline;
+    justify-content: center;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact-body {
+    margin-top: 20px;
+}
+/* -------------- BUTTONS --------------- */
+.carpentry-button {
+    width: 175px;
+    background: none;
+    border-radius: 4px;
+    padding: 1.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #144866;
+    border: none;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carpentry-button:hover {
+    background-color: #7AAECC;
+    transition: 0.7s;
+    opacity: 100%;
+    box-shadow: 0 0 8.5px 1px #49687a;
+}
+
+.carpentry-button:active {
+    transform: scale(0.85);
+}
+
+.carpentry-button:focus {
+    background-color: #7AAECC;
+    box-shadow: 0 0 3px 1px #49687a;
+}
+
+.arrow {
+    border: solid #144866;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    align-items: center;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    width: 180px;
+    top: 0;
+    left: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+    margin-left: 5px;
+}
+
+.dropdown.active > .carpentry-button + .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.links {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: #144866;
+    display: flex; 
+    justify-content: center; 
+    margin-top: 0;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.dropdown-heading {
+    margin-top: 0;
+    color: black;
+    font-weight: 600;
+    border: none;
+    display: flex; 
+    justify-content: center; 
+    margin-top: 0;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 5px;
+    font-size: 18px;
+}
+/*---------------- Contact Button ---------------*/
+.contact-button {
+    background: none;
+    border-radius: 4px;
+    padding: 1.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #144866;
+    border: none;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 175px;
+}
+.contact-button:hover {
+    background-color: #7AAECC;
+    transition: 0.7s;
+    opacity: 100%;
+    box-shadow: 0 0 8.5px 1px #49687a;
+}
+.contact-button:active {
+    transform: scale(0.85);
+}
+.contact-button:focus {
+    background-color: #7AAECC;
+    box-shadow: 0 0 3px 1px #49687a;
+}    
+.homepage-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #144866;
+    font-size: 0.7em;
+}
+/*------------------Hamburger menu------------------*/
+.open-contact {
+    background: none; 
+    border: none;
+    color: white;
+    font-family: "Proza Libre", sans-serif;
+    font-size: 1em;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.7s ease;
+    font-size: 1em;
+}
+.navbar {
+    min-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #144866;
+    width: 100%;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 3;
+}
+.nav-menu.active {
+    left: 0;
+    opacity: 1;
+}
+.nav-item {
+    list-style: none;
+    margin: 16px auto;
+    font-family: "Proza Libre", sans-serif;
+    text-align: center;
+}
+.nav-link:hover {
+    color: dodgerblue;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    justify-items: center;
+    align-items: center;
+}
+.burger-box {
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    background-color: #144866;
+    padding: 4px;
+    border-radius: 5px;
+    width: 34px;
+    height: 34px;
+    margin-top: 3.5em;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+/* ------------------------------------------------------------------------------------ */
+
+/*---------------------------  CSS for computer screens --------------------------------*/
+@media only screen and (min-width: 768px) {
+
+    .light-header {
+        background-color: #144866;
+        color: #7AAECC;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; 
+        font-size: 34px !important; 
+    }
+
+    .dark-header {
+        background-color: #7AAECC;
+        color: #144866;
+        padding: 10px;
+        font-size: 34px !important;
+    }
+
+    .blue-header {
+        background-color: #3D7799;
+        color: #D9EAF5;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 34px !important;
+    }
+
+    #contact-video {
+        right: 0; 
+        bottom: 0;
+        width: 500px;
+        height: 280px; 
+    }
+    
+    .contact-popup {
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 280px;
+        max-width: 80%;
+    }
+
+    .contact-body {
+        text-align: center;
+        padding-top: 85px;
+        padding-left: 20px;
+    }
+
+    .close-contact {
+        padding: 10px 15px;
+    }
+
+    .email {
+        font-size: 22px;
+    }
+
+    .contact-body {
+        margin-top: 0;
+    }
+
+    .arrow {
+        margin-bottom: 6px;
+    }
+    
+}
+
+
+
+
+
+

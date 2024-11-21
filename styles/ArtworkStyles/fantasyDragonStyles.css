@@ -1,0 +1,232 @@
+/* ------------------------- CSS for phone screens --------------------------------*/  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#lunarNY-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* ------------------------- CSS for phone screens --------------------------------*/  
+
+.homepage-footer {
+    bottom: 0;
+    padding: 5px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    color: rgba(204, 204, 204, 1);
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+.homepage-h1 {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+    
+.light-header {
+    background-color: #144866;
+    color: #7AAECC;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+    
+.dark-header {
+    background-color: #7AAECC;
+    color: #144866;
+    padding: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+    
+.blue-header {
+    background-color: #3D7799;
+    color: #D9EAF5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.grid4 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: baseline;
+}
+
+.homepage-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 15px;
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
+}
+
+.dragons-container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    justify-content: center;
+}
+
+.dragons-title {
+    grid-column: 1/3;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.reddrag-div {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#redDrag {
+    width: 200px;
+}
+
+.bluedrag-div {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#blueDrag {
+    width: 200px;
+}
+
+.cupofjoe-div {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    left: 50%;
+    justify-self: center;
+}
+
+#cupofjoe {
+    width: 400px;
+}
+
+.bio {
+    background: rgba(204, 204, 204, 0.70);
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 16px;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h2 {
+    padding-top: 20px; 
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.h3 {
+    padding-top: 20px; 
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.bio-p {
+    padding: 20px;
+    line-height: 30px;
+    text-indent: 20px;
+    font-weight: 500;
+}
+
+.title {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .light-header {
+        background-color: #144866;
+        color: #7AAECC;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; 
+        font-size: 34px !important; 
+    }
+
+    .dark-header {
+        background-color: #7AAECC;
+        color: #144866;
+        padding: 10px;
+        font-size: 34px !important;
+    }
+
+    .blue-header {
+        background-color: #3D7799;
+        color: #D9EAF5;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 34px !important;
+    }
+    
+    #redDrag {
+        width: 335px;
+    }
+    
+    .bluedrag-div {
+        margin-left: 200px;
+    }
+    
+    #blueDrag {
+        width: 335px;
+    }
+
+    #cupofjoe {
+        width: 600px;
+    }
+}
