@@ -1,4 +1,4 @@
-<h1>LightDarkBlue</h1>
+<h1><a href="https://lightdarkblue.com">LightDarkBlue.com</a></h1>
 <br/>
 This site was made to present physical art pieces that I have created - some of which have been displayed in art exhibits and stay in public spaces.
 <br/>
